@@ -8,7 +8,7 @@ allStar("ab") → "a*b"
 */
 
 function allStar(str) {
-	return (str.length < 2)
+    return (str.length < 2)
         ? str
         : str.charAt(0) + "*" + allStar(str.substr(1));
 }

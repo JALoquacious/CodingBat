@@ -11,10 +11,10 @@ count8(8818) → 4
 */
 
 function count8(n) {
-	n = parseInt(n);
-	if (n === 0) { return 0; }
-	else if (n % 100 === 88) { return 2 + count8(n / 10); }
-	return (n % 10 === 8 ? 1 : 0) + count8(n / 10);
+    n = parseInt(n);
+    if (n === 0) { return 0; }
+    else if (n % 100 === 88) { return 2 + count8(n / 10); }
+    return (n % 10 === 8 ? 1 : 0) + count8(n / 10);
 }
 
 console.log(count8(8)); // 1

@@ -6,8 +6,8 @@ removes the rightmost digit (126 / 10 is 12).
 */
 
 function count7(n) {
-	if (n < 1) { return 0; }
-	return (n % 10 === 7)
+    if (n < 1) { return 0; }
+    return (n % 10 === 7)
         ? 1 + count7(parseInt(n / 10, 10))
         :     count7(parseInt(n / 10, 10));
 }

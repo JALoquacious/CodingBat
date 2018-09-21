@@ -9,7 +9,7 @@ bunnyEars(2) → 4
 */
 
 function bunnyEars(n) {
-	return (n === 0) ? 0 : 2 + bunnyEars(n - 1);
+    return (n === 0) ? 0 : 2 + bunnyEars(n - 1);
 }
 
 console.log(bunnyEars(0)); // 0

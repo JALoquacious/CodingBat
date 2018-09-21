@@ -12,9 +12,9 @@ array220([3], 0) → false
 */
 
 function array220(array, start) {
-	if (array.length < 2 || array.length <= start) { return false; }
-	if (array[start] * 10 === array[start + 1])    { return true;  }
-	return array220(array, start + 1);
+    if (array.length < 2 || array.length <= start) { return false; }
+    if (array[start] * 10 === array[start + 1])    { return true;  }
+    return array220(array, start + 1);
 }
 
 console.log(array220([1, 2, 20], 0)); // true

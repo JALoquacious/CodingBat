@@ -11,11 +11,11 @@ array6([6], 0) → true
 */
 
 function array6(array, idx) {
-	if (idx >= array.length) {
-		return false;
-	} else {
-		return (array[idx] === 6) ? true : array6(array, idx + 1);
-	}
+    if (idx >= array.length) {
+        return false;
+    } else {
+        return (array[idx] === 6) ? true : array6(array, idx + 1);
+    }
 }
 
 console.log(array6([1, 6, 4], 0)); // true

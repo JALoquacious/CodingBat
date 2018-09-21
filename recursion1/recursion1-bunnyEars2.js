@@ -11,13 +11,13 @@ bunnyEars2(2) → 5
 */
 
 function bunnyEars2(n) {
-	if (n === 0) {
+    if (n === 0) {
         return 0;
     } else {
-		return (n % 2)
+        return (n % 2)
             ? 2 + bunnyEars2(n - 1)
             : 3 + bunnyEars2(n - 1);
-	}
+    }
 }
 
 console.log(bunnyEars2(0)); // 0

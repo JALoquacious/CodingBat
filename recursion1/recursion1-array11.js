@@ -11,13 +11,13 @@ array11([1, 2, 3, 4], 0) → 0
 */
 
 function array11(array, start) {
-	if (array.length < 1 || array.length <= start) {
-		return 0;
-	} else {
-		return (array[start] === 11)
-			? array11(array, start + 1) + 1
-			: array11(array, start + 1);
-	}
+    if (array.length < 1 || array.length <= start) {
+        return 0;
+    } else {
+        return (array[start] === 11)
+            ? array11(array, start + 1) + 1
+            : array11(array, start + 1);
+    }
 }
 
 console.log(array11([1, 2, 11], 0)); // 1

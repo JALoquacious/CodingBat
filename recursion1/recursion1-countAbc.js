@@ -9,12 +9,12 @@ countAbc("abaxxaba") → 2
 
 function countAbc(str) {
     if (str.length === 0) {
-		return 0;
+        return 0;
     } else {
-    	let sub = str.substr(0, 3);
-		return (sub === "abc" || sub === "aba")
-			? 1 + countAbc(str.substr(sub.length))
-			: countAbc(str.substr(1));
+        let sub = str.substr(0, 3);
+        return (sub === "abc" || sub === "aba")
+            ? 1 + countAbc(str.substr(sub.length))
+            : countAbc(str.substr(1));
     }
 }
 
